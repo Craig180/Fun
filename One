@@ -1,0 +1,12 @@
+keepLoopingVar = True #The variable that determines whether we keep looping
+
+############MAIN FUNCTION (START)###################################################
+def main(): #Main program function
+	for i in range(3001): #for 1 - 3000, but not 3001...
+		string = 'I love you ' + str(i) + ' !'; #Create a string that says I love you and where we are in 1 - 3000
+		print(string);	#Print that string out to the computer screen	
+	return 0; 	#once it's done, return to the variable a value of 0, or off
+#############MAIN FUNCTION (END)####################################################
+
+while keepLoopingVar == True:#As long as we're supposed to keep looping...
+	keepLoopingVar = main(); #Run the program, until keepLoopingVar is set to 0 by the return command at the end of the 'main' function
